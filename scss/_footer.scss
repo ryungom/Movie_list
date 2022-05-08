@@ -1,0 +1,57 @@
+#footer {
+  dl {
+    padding-bottom:42px;
+    border-bottom:1px solid #c4c4c4;
+    &::after {
+      display:block; content:''; clear:both;
+    }
+    dt {
+      float:left;
+      h2 {
+        font:bold 22px/1 "Roboto";
+      }
+    }
+    dd {
+      float:right;
+      a {
+        margin-right:20px;
+        &:last-child {
+          margin-right:0px;
+        }
+        img {
+          width:25px; height:25px;
+        }
+      }
+    }
+  }
+  .address {
+    padding-top:36px;
+    ul {
+      &::after {
+        display:block; content:''; clear:both;
+      }
+      li {
+        float:left;
+        font:14px/1 "Noto Snas KR"; color:#4f4f4f;
+        span {
+          font-weight:700; margin-right:3px;
+        }
+        &:nth-child(5) {
+          &::after {
+            display:none;
+          }
+        }
+        &:last-child {
+          float:right;
+          &::after {
+            display:none;
+          }
+        }
+        &::after {
+          display:inline-block; content:''; width:1px; height:16px; background:#4f4f4f;
+          margin:0 10px; vertical-align:-2px;
+        }
+      }
+    }
+  }
+}

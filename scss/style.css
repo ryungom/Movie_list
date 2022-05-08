@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, dl, dt, dd, address {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ir {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+}
+
+#main {
+  max-width: 1060px;
+  background: #F2F2F2;
+  margin: 30px auto 135px;
+  border-radius: 10px;
+  border: 2px solid #bdbdbd;
+}
+
+#main .wrapper {
+  padding: 41px 28px 31px 28px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#footer {
+  width: 100%;
+  background: #f2f2f2;
+  padding: 53px 0 38px;
+}
+
+#footer .f_wrapper {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+#header {
+  width: 650px;
+  margin: 0px auto;
+}
+
+#header .title {
+  font: bold 24px/1 "Roboto";
+  color: #000;
+  text-align: center;
+}
+
+#header .gnb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 37px;
+  padding: 28px 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: 2px solid #bdbdbd;
+}
+
+#header .gnb > li.select {
+  font-weight: bold;
+}
+
+.content {
+  background: #fff;
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 26px;
+}
+
+.content::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.content .movie_list {
+  width: 220px;
+  border: 2px solid #bdbdbd;
+  border-radius: 10px;
+  padding: 20px 20px 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  float: left;
+  margin-right: 22px;
+}
+
+.content .movie_list:nth-of-type(4) {
+  margin-right: 0px;
+  margin-bottom: 24px;
+}
+
+.content .movie_list:last-of-type {
+  margin-right: 0px;
+}
+
+.content .movie_list .poster {
+  position: relative;
+  padding-top: 254px;
+  height: 0px;
+  margin-bottom: 10px;
+}
+
+.content .movie_list .poster img {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px  2px 5px #555;
+          box-shadow: 2px  2px 5px #555;
+}
+
+.content .movie_list .movie_title {
+  font: bold 16px/1 "Noto Sans KR";
+  color: #000;
+  text-align: center;
+}
+
+.content .movie_list .movie_info {
+  padding: 12px 0 18px 0;
+}
+
+.content .movie_list .movie_info::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.content .movie_list .movie_info > li {
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-family: Noto Sans KR;
+}
+
+.content .movie_list .movie_info > li span {
+  display: inline-block;
+  margin-right: 5px;
+  color: #828282;
+  font-weight: 400px;
+}
+
+.content .movie_list .movie_info > li p {
+  display: inline-block;
+}
+
+.content .movie_list .movie_info > li:nth-child(1) {
+  float: left;
+}
+
+.content .movie_list .movie_info > li:nth-child(2) {
+  float: right;
+}
+
+.content .movie_list .movie_info > li:nth-child(2) p::before {
+  content: ' ';
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-image: url(../images/star.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  margin-right: 5px;
+}
+
+.content .movie_list .movie_info > li:nth-child(3) {
+  float: left;
+}
+
+.content .movie_list .movie_info > li:nth-child(4) {
+  float: left;
+  margin-bottom: 0px;
+}
+
+.content .movie_btns {
+  margin: 0 -20px;
+  border-top: 2px solid #bdbdbd;
+}
+
+.content .movie_btns > button {
+  background: #f2f2f2;
+  border: none;
+  width: 50%;
+  height: 40px;
+  font: 500 14px/1 "Noto Sans KR";
+}
+
+.content .movie_btns > button.purchase {
+  float: left;
+  border-right: 2px solid #bdbdbd;
+}
+
+.content .movie_btns > button.preview {
+  float: right;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+}
+
+.content .movie_btns > button.preview span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(../images/movie_list/start.png);
+  background-size: 20px;
+  margin-right: 5px;
+  vertical-align: -4px;
+}
+
+#footer dl {
+  padding-bottom: 42px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+#footer dl::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+#footer dl dt {
+  float: left;
+}
+
+#footer dl dt h2 {
+  font: bold 22px/1 "Roboto";
+}
+
+#footer dl dd {
+  float: right;
+}
+
+#footer dl dd a {
+  margin-right: 20px;
+}
+
+#footer dl dd a:last-child {
+  margin-right: 0px;
+}
+
+#footer dl dd a img {
+  width: 25px;
+  height: 25px;
+}
+
+#footer .address {
+  padding-top: 36px;
+}
+
+#footer .address ul::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+#footer .address ul li {
+  float: left;
+  font: 14px/1 "Noto Snas KR";
+  color: #4f4f4f;
+}
+
+#footer .address ul li span {
+  font-weight: 700;
+  margin-right: 3px;
+}
+
+#footer .address ul li:nth-child(5)::after {
+  display: none;
+}
+
+#footer .address ul li:last-child {
+  float: right;
+}
+
+#footer .address ul li:last-child::after {
+  display: none;
+}
+
+#footer .address ul li::after {
+  display: inline-block;
+  content: '';
+  width: 1px;
+  height: 16px;
+  background: #4f4f4f;
+  margin: 0 10px;
+  vertical-align: -2px;
+}
+/*# sourceMappingURL=style.css.map */

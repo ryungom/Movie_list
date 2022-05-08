@@ -1,0 +1,18 @@
+#header {
+  width:650px; margin:0px auto;
+  .title {
+    font:bold 24px/1 "Roboto"; color:#000;
+    text-align:center;
+  }
+  .gnb {
+    display:flex;
+    justify-content:space-between;
+    margin-top:37px;
+    padding:28px 150px;
+    box-sizing:border-box;
+    border-top:2px solid #bdbdbd;
+    >li.select {
+      font-weight:bold;
+    }
+  }
+}

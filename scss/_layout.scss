@@ -1,0 +1,21 @@
+#main {
+  max-width: 1060px;
+  background: #F2F2F2;
+  margin: 30px auto 135px;
+  border-radius:10px;
+  border: 2px solid #bdbdbd;
+  .wrapper {
+    padding: 41px 28px 31px 28px;
+    box-sizing:border-box;
+
+  }
+}
+
+#footer {
+  width:100%; background:#f2f2f2;
+  padding:53px 0 38px;
+  .f_wrapper {
+    max-width:1200px;
+    margin:0px auto;
+  }
+}
